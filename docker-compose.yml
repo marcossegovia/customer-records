@@ -1,0 +1,14 @@
+version: '3'
+services:
+  php-cli:
+    build: docker/php-cli
+    working_dir: /app
+    command: bash -c "composer install && php ./index.php"
+    volumes:
+      - ./:/app
+  phpunit:
+    build: docker/phpunit
+    working_dir: /app
+    command: bash -c "composer install && phpunit -vvv"
+    volumes:
+      - ./:/app
