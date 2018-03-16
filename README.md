@@ -15,8 +15,8 @@ git clone https://github.com/marcossegovia/customer-records.git
 
 > On your mac/linux
 
-- You should have php 7.1.10 on you mac
-- You should also have composer on your mac
+- You should have [php](https://php-osx.liip.ch/) 7.1.10 on you mac
+- You should also have [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) on your mac
 
 Install dependencies
 ```bash
@@ -35,7 +35,7 @@ php index.php
 
 > With Docker
 
-- You should have Docker
+- You should have [Docker](https://www.docker.com/community-edition#/download)
 - You should also have Docker Compose
 
 To run the test suite
@@ -48,7 +48,7 @@ To run the app
 docker-compose up php-cli
 ```
 
-In both cases you should get the test-suite passing and the output of the customers within 100 kms.
+In both cases you should get the test-suite passing when running tests and the output of the customers within 100 kms when running the app.
 
 ## License
 
